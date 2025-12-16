@@ -1,22 +1,29 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const logout = searchParams.get("logout");
-    if (logout) {
-      try {
-        localStorage.removeItem("hog_admin_token");
-      } catch (e) {}
-      router.replace("/");
+    // read search params from window.location on the client to avoid
+    // using `useSearchParams` which can cause a Suspense-related build error
+    // when prerendering. This runs only in the browser.
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const logout = params.get("logout");
+      if (logout) {
+        try {
+          localStorage.removeItem("hog_admin_token");
+        } catch (e) {}
+        router.replace("/");
+      }
+    } catch (e) {
+      // ignore when not available
     }
-  }, [searchParams, router]);
+  }, [router]);
 
   function handleSubmit(e) {
     e.preventDefault();
