@@ -24,3 +24,32 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Bootstrap-friendly admin overrides */
+.sidebar-custom {
+  width: 220px;
+}
+
+.sidebar-custom .nav-link {
+  color: #374151;
+}
+
+.sidebar-custom .nav-link:hover {
+  background: rgba(245, 158, 11, 0.08); /* warm warning tint */
+  border-radius: 6px;
+}
+
+.sidebar-custom .nav-link.active {
+  background: rgba(245, 158, 11, 0.18);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.navbar-brand .fa-church {
+  color: #f59e0b; /* bootstrap warning color */
+}
+
+/* Make main content scroll within viewport on desktop */
+main.vh-fit {
+  min-height: calc(100vh - 56px);
+}

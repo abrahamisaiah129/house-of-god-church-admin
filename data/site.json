@@ -1,0 +1,11 @@
+{
+  "converts": 128,
+  "mediaCount": 54,
+  "welcomeText": "Welcome to Household Of God Admin Dashboard — serving with love and faith.",
+  "todaysAnnouncement": "Sunday service at 9:00 AM — special guest speaker. All are welcome!",
+  "infoOverview": {
+    "address": "123 Faith Lane, Cityville",
+    "phone": "+1 (555) 123-4567",
+    "members": 512
+  }
+}

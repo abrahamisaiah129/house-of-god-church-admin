@@ -1,0 +1,10 @@
+[
+  {
+    "id": "e1",
+    "title": "Sunday Service",
+    "description": "Weekly Sunday worship service.",
+    "start": "2025-12-21T09:00:00.000Z",
+    "end": "2025-12-21T11:00:00.000Z",
+    "location": "Main Sanctuary"
+  }
+]

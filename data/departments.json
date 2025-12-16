@@ -1,0 +1,14 @@
+[
+  {
+    "id": "d1",
+    "name": "Children",
+    "description": "Children ministry activities and programs.",
+    "contact": "children@hog.org"
+  },
+  {
+    "id": "d2",
+    "name": "Missions",
+    "description": "Missionary outreach and support.",
+    "contact": "missions@hog.org"
+  }
+]

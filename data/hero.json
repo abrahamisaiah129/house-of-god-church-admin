@@ -1,0 +1,18 @@
+{
+  "slides": [
+    {
+      "id": "h1",
+      "image": "/assets/images/ca1.png",
+      "title": "HOUSEHOLD OF GOD CHURCH",
+      "subtitle": "Join us in worship, experience God's presence, and grow in faith.",
+      "serviceTime": "Sunday: 9 AM – Lagos, Nigeria"
+    },
+    {
+      "id": "h2",
+      "image": "/assets/images/ca3.png",
+      "title": "GOD'S LOVE",
+      "subtitle": "Come as you are and encounter the transforming power of God.",
+      "serviceTime": "Wednesday Bible Study: 6 PM"
+    }
+  ]
+}
